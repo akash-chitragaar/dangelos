@@ -1,0 +1,198 @@
+{
+  "_comment": "D'Angelo's Pizzeria & Restaurant - Complete Configuration File",
+  "_instructions": "This single file controls all content on the website. Customize values for your restaurant.",
+  "_version": "1.0",
+  "restaurant": {
+    "name": "D'Angelo's Pizzeria & Restaurant",
+    "tagline": "Authentic Italian Pizza & Cuisine",
+    "description": "Best pizzeria in Bronx! Authentic Italian pizza and restaurant serving fresh pizza, pasta, heroes, and more. Family recipes, premium ingredients. Dine-in, takeout, and delivery in 10469. Order online for pickup or delivery!",
+    "phone": "(718) 379-6667",
+    "email": "info@dangelosgunhill.com",
+    "address": {
+      "street": "902 E Gun Hill Rd",
+      "city": "Bronx",
+      "state": "NY",
+      "zip": "10469"
+    },
+    "hours": {
+      "monday": "11:00 AM - 10:00 PM",
+      "tuesday": "11:00 AM - 10:00 PM",
+      "wednesday": "11:00 AM - 10:00 PM",
+      "thursday": "11:00 AM - 10:00 PM",
+      "friday": "11:00 AM - 11:00 PM",
+      "saturday": "11:00 AM - 11:00 PM",
+      "sunday": "12:00 PM - 10:00 PM"
+    },
+    "social": {
+      "Google": "https://maps.app.goo.gl/9ZPjWfkmXscyosvr5",
+      "facebook": "",
+      "instagram": "https://www.instagram.com/dangelospizzagunhill/",
+      "twitter": "",
+      "yelp": "https://www.yelp.com/biz/d-angelos-pizza-and-pasta-bronx-6"
+    },
+    "orderLink": "https://ser.vi/dangelosgunhill?source=website&campaign=mainsite",
+    "appLinks": {
+      "ios": "https://apps.apple.com/us/app/dangelos-pizzeria/id6738046441",
+      "android": "https://play.google.com/store/apps/details?id=com.wnapp.id1762219277961"
+    },
+    "colors": {
+      "_comment": "Brand colors from D'Angelo's logo - red, cream, olive theme",
+      "primary": "#b83232",
+      "secondary": "#8b7355",
+      "accent": "#d4af37",
+      "light": "#f5f0e8",
+      "dark": "#2c1810",
+      "gray": "#6c757d"
+    },
+    "geo": {
+      "_comment": "Geographic coordinates for SEO and Google Maps",
+      "latitude": 40.8779,
+      "longitude": -73.8478,
+      "placeId": "ChIJL_5Er0DzwokRNy6jM7_DyGY",
+      "googleMapsUrl": "https://maps.app.goo.gl/9ZPjWfkmXscyosvr5"
+    },
+    "api": {
+      "_comment": "API configuration for Google Reviews and other integrations",
+      "restaurantId": "dangelospizzeria",
+      "googlePlaceId": "ChIJL_5Er0DzwokRNy6jM7_DyGY",
+      "reviewsApiUrl": "https://reviewsapi.restaurant.ink",
+      "apiKey": "da_live_pk_7f8e9d0a1b2c3d4e5f6a7b8c9d0e1f2a"
+    }
+  },
+  "hero": {
+    "_comment": "Homepage hero section",
+    "title": "D'Angelo's Pizzeria & Restaurant",
+    "subtitle": "Authentic Italian Pizza • Fresh Pasta • Classic Heroes",
+    "description": "Family Recipes, Fresh Ingredients, Made with Love",
+    "backgroundImage": "https://assets2.ser.vi/brand/alluseuvenue/feature_image/d-angelos-venue.png",
+    "ctaText": "Order Online Now",
+    "ctaSecondary": "View Full Menu",
+    "ctaLink": "#order"
+  },
+  "about": {
+    "_comment": "About section content",
+    "title": "About D'Angelo's Pizzeria – Authentic Italian in the Bronx",
+    "subtitle": "Family Tradition Since 1985",
+    "content": "Welcome to D'Angelo's Pizzeria & Restaurant, your neighborhood Italian restaurant in the Bronx! We serve authentic Italian pizza, fresh pasta, and classic heroes made with love and family recipes passed down through generations.\\n\\nOur pizzas are made with hand-tossed dough prepared fresh daily, topped with premium mozzarella, San Marzano tomatoes, and the finest ingredients. Whether you're craving a classic Margherita, meat lovers, or our signature D'Angelo's Special, we make it fresh from our brick oven.\\n\\nWe also serve delicious pasta dishes, chicken entrees, fresh salads, calzones, and daily specials. Perfect for family dinners, dine-in, takeout, or delivery in Gun Hill and surrounding areas.\\n\\nAuthentic recipes. Quality ingredients. Family atmosphere. Mangia bene!",
+    "image": "assets/images/about-pizza.jpg",
+    "stats": [
+      {
+        "number": "35+",
+        "label": "Years Experience"
+      },
+      {
+        "number": "100%",
+        "label": "Fresh Ingredients"
+      },
+      {
+        "number": "5000+",
+        "label": "Happy Customers"
+      }
+    ]
+  },
+  "features": [
+    {
+      "_comment": "Use Bootstrap Icons names (without 'bi-' prefix)",
+      "icon": "fire",
+      "title": "Brick Oven Pizza",
+      "description": "Hand-tossed dough and authentic brick oven cooking for that perfect crispy crust"
+    },
+    {
+      "icon": "heart-fill",
+      "title": "Family Recipes",
+      "description": "Traditional Italian recipes passed down through generations, made with love"
+    },
+    {
+      "icon": "truck",
+      "title": "Fast Delivery",
+      "description": "Hot and fresh delivery to your door. Order online for quick pickup or delivery"
+    }
+  ],
+  "specialties": {
+    "_comment": "Menu highlights section header",
+    "title": "Our Specialties – Authentic Italian Pizza & Cuisine",
+    "subtitle": "Fresh Pizza, Pasta, Heroes & More",
+    "description": "Every dish is crafted with authentic Italian recipes and the finest ingredients. From classic pizza to homemade pasta and signature heroes."
+  },
+  "menuHighlights": [
+    {
+      "_comment": "Featured menu items for homepage (set featured: true to display)",
+      "name": "D'Angelo's Special Pizza",
+      "description": "Pepperoni, sausage, meatballs, peppers, onions, mushrooms, and extra cheese",
+      "price": "$18.99",
+      "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&q=80",
+      "category": "pizza",
+      "featured": true
+    },
+    {
+      "name": "Classic Margherita Pizza",
+      "description": "Fresh mozzarella, San Marzano tomatoes, basil, and extra virgin olive oil",
+      "price": "$14.99",
+      "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&q=80",
+      "category": "pizza",
+      "featured": true
+    },
+    {
+      "name": "Chicken Parmigiana",
+      "description": "Breaded chicken cutlet, marinara sauce, melted mozzarella, served with pasta",
+      "price": "$16.99",
+      "image": "https://images.unsplash.com/photo-1632778149955-e80f8ceca2e8?w=600&q=80",
+      "category": "entree",
+      "featured": true
+    },
+    {
+      "name": "Baked Ziti",
+      "description": "Ziti pasta, ricotta, mozzarella, marinara sauce, baked to perfection",
+      "price": "$13.99",
+      "image": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=600&q=80",
+      "category": "pasta",
+      "featured": true
+    },
+    {
+      "name": "Italian Hero",
+      "description": "Ham, salami, pepperoni, provolone, lettuce, tomato, oil & vinegar",
+      "price": "$11.99",
+      "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?w=600&q=80",
+      "category": "hero",
+      "featured": true
+    },
+    {
+      "name": "Meat Lovers Pizza",
+      "description": "Pepperoni, sausage, meatballs, bacon, and ham with extra cheese",
+      "price": "$17.99",
+      "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=600&q=80",
+      "category": "pizza",
+      "featured": true
+    },
+    {
+      "name": "Chicken Alfredo",
+      "description": "Grilled chicken, fettuccine pasta, creamy Alfredo sauce, parmesan",
+      "price": "$15.99",
+      "image": "https://images.unsplash.com/photo-1645112411341-6c4fd023714a?w=600&q=80",
+      "category": "pasta",
+      "featured": true
+    },
+    {
+      "name": "Cheese Calzone",
+      "description": "Ricotta, mozzarella, and parmesan folded in pizza dough, served with sauce",
+      "price": "$10.99",
+      "image": "https://images.unsplash.com/photo-1601924582970-9238bcb495d9?w=600&q=80",
+      "category": "calzone",
+      "featured": true
+    }
+  ],
+  "gallery": {
+    "_comment": "Photo gallery section (optional - not currently displayed)",
+    "title": "Gallery",
+    "subtitle": "A Taste of Italy",
+    "images": []
+  },
+  "testimonials": [],
+  "locations": {
+    "_comment": "Location and contact information",
+    "title": "Visit Us",
+    "subtitle": "Come Experience Authentic Italian Cuisine",
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.8779!2d-73.8478!3d40.8779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDUyJzQwLjQiTiA3M8KwNTAnNTIuMSJX!5e0!3m2!1sen!2sus!4v1234567890"
+  }
+}
+

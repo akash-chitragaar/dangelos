@@ -1,0 +1,60 @@
+# D'Angelo's Pizzeria & Restaurant - Robots.txt
+# http://dangelosgunhill.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Disallow sensitive files and directories
+Disallow: /cache/
+Disallow: /api/cache/
+Disallow: /config.json
+Disallow: /.htaccess
+
+# Allow important pages
+Allow: /index.php
+Allow: /getapp.php
+Allow: /assets/
+
+# Sitemap
+Sitemap: http://dangelosgunhill.com/sitemap.xml
+
+# Crawl-delay (optional - helps prevent server overload)
+# Crawl-delay: 1
+
+# Block bad bots (optional)
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: DotBot
+Crawl-delay: 10
+
+# Allow Google bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /
+
+# Allow Bing bots
+User-agent: Bingbot
+Allow: /
+
+# Allow social media bots for link previews
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
