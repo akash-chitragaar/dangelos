@@ -18,12 +18,21 @@ $testimonials = $config['testimonials'];
 
 <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G8N63S3MTT"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-XXXXXXXXXX');
+      gtag('config', 'G-G8N63S3MTT');
+    </script>
+
+    <!-- Ahrefs Analytics -->
+    <script>
+      var ahrefs_analytics_script = document.createElement('script');
+      ahrefs_analytics_script.async = true;
+      ahrefs_analytics_script.src = 'https://analytics.ahrefs.com/analytics.js';
+      ahrefs_analytics_script.setAttribute('data-key', 'kVmiQdLRoh7SWzFaTFGAtA');
+      document.getElementsByTagName('head')[0].appendChild(ahrefs_analytics_script);
     </script>
 
     <meta charset="UTF-8">
