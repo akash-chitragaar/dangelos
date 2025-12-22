@@ -5,12 +5,12 @@
   "restaurant": {
     "name": "D'Angelo's Pizzeria & Restaurant",
     "tagline": "Authentic Italian Pizza & Cuisine",
-    "description": "Best pizzeria in Bronx! Authentic Italian pizza and restaurant serving fresh pizza, pasta, heroes, and more. Family recipes, premium ingredients. Dine-in, takeout, and delivery in 10469. Order online for pickup or delivery!",
-    "phone": "(718) 379-6667",
+    "description": "Best pizzeria in The Bronx since 2004! D'Angelo's Pizzeria & Restaurant serves authentic Italian pizza, fresh pasta, classic heroes, and veal entrees in Gun Hill, NY. Counter-serve pizzeria with hand-tossed pizzas, premium mozzarella, San Marzano tomatoes, and family recipes. Dine-in, takeout, and delivery in 10469. Order online for pickup or delivery!",
+    "phone": "(718) 928-3123",
     "email": "info@dangelosgunhill.com",
     "address": {
-      "street": "902 E Gun Hill Rd",
-      "city": "Bronx",
+      "street": "902 East Gun Hill Road",
+      "city": "The Bronx",
       "state": "NY",
       "zip": "10469"
     },
@@ -46,10 +46,10 @@
     },
     "geo": {
       "_comment": "Geographic coordinates for SEO and Google Maps",
-      "latitude": 40.8779,
-      "longitude": -73.8478,
+      "latitude": 40.875207,
+      "longitude": -73.8603578,
       "placeId": "ChIJL_5Er0DzwokRNy6jM7_DyGY",
-      "googleMapsUrl": "https://maps.app.goo.gl/9ZPjWfkmXscyosvr5"
+      "googleMapsUrl": "https://www.google.com/maps/dir//%27%27/data=!4m8!4m7!1m0!1m5!1m1!1s0x89c2f340af44fe2f:0x66c8c3bf33a32e37!2m2!1d-73.8603578!2d40.875206999999996"
     },
     "api": {
       "_comment": "API configuration for Google Reviews and other integrations",
@@ -72,12 +72,12 @@
   "about": {
     "_comment": "About section content",
     "title": "About D'Angelo's Pizzeria – Authentic Italian in the Bronx",
-    "subtitle": "Family Tradition Since 1985",
-    "content": "Welcome to D'Angelo's Pizzeria & Restaurant, your neighborhood Italian restaurant in the Bronx! We serve authentic Italian pizza, fresh pasta, and classic heroes made with love and family recipes passed down through generations.\\n\\nOur pizzas are made with hand-tossed dough prepared fresh daily, topped with premium mozzarella, San Marzano tomatoes, and the finest ingredients. Whether you're craving a classic Margherita, meat lovers, or our signature D'Angelo's Special, we make it fresh from our brick oven.\\n\\nWe also serve delicious pasta dishes, chicken entrees, fresh salads, calzones, and daily specials. Perfect for family dinners, dine-in, takeout, or delivery in Gun Hill and surrounding areas.\\n\\nAuthentic recipes. Quality ingredients. Family atmosphere. Mangia bene!",
+    "subtitle": "Family Tradition Since 2004",
+    "content": "Welcome to D'Angelo's Pizzeria and Restaurant, a beloved counter-serve pizzeria in The Bronx serving authentic Italian favorites since 2004. Located in the heart of Gun Hill, we specialize in hand-tossed pizzas made with premium mozzarella, San Marzano tomatoes, and cherished family recipes passed down through generations.\\n\\nOur extensive menu features more than just pizza – enjoy fresh pasta dishes, classic Italian heroes, savory veal entrees, and rotating daily specials. Every dish is crafted with the finest ingredients and authentic Italian cooking techniques that have made us a neighborhood favorite for over 20 years.\\n\\nWhether you're dining in at our casual counter-serve location, grabbing takeout on the go, or enjoying delivery to your home in The Bronx, D'Angelo's brings the warmth and tradition of a true family-run Italian eatery to your table. Experience authentic Italian cuisine in Gun Hill – where quality ingredients meet time-honored recipes. Mangia bene!",
     "image": "assets/images/about-pizza.jpg",
     "stats": [
       {
-        "number": "35+",
+        "number": "20+",
         "label": "Years Experience"
       },
       {
@@ -85,8 +85,8 @@
         "label": "Fresh Ingredients"
       },
       {
-        "number": "5000+",
-        "label": "Happy Customers"
+        "number": "247+",
+        "label": "Google Reviews"
       }
     ]
   },
@@ -94,8 +94,8 @@
     {
       "_comment": "Use Bootstrap Icons names (without 'bi-' prefix)",
       "icon": "fire",
-      "title": "Brick Oven Pizza",
-      "description": "Hand-tossed dough and authentic brick oven cooking for that perfect crispy crust"
+      "title": "Fresh Pizza Daily",
+      "description": "Hand-tossed dough made fresh daily with premium ingredients for that perfect crispy crust"
     },
     {
       "icon": "heart-fill",
@@ -192,7 +192,7 @@
     "_comment": "Location and contact information",
     "title": "Visit Us",
     "subtitle": "Come Experience Authentic Italian Cuisine",
-    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.8779!2d-73.8478!3d40.8779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDUyJzQwLjQiTiA3M8KwNTAnNTIuMSJX!5e0!3m2!1sen!2sus!4v1234567890"
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3016.848129465807!2d-73.86293272325233!3d40.875206971369686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f340af44fe2f%3A0x66c8c3bf33a32e37!2sD%27Angelo%27s%20Pizzeria%20and%20Restaurant%20-%20Gun%20Hill!5e0!3m2!1sen!2sin!4v1766368069974!5m2!1sen!2sin"
   }
 }
 

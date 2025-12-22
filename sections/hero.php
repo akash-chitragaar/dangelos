@@ -5,7 +5,7 @@
         <div class="row h-100 align-items-center">
             <div class="col-lg-10 col-xl-8 mx-auto text-center hero-content">
                 <div class="hero-badge">
-                    Brick Oven Pizza • Dine-in • Takeout • Delivery
+                    Fresh Pizza Daily • Dine-in • Takeout • Delivery
                 </div>
                 <h1 class="hero-title"><?php echo $hero['title']; ?></h1>
                 <p class="hero-subtitle"><?php echo $hero['subtitle']; ?></p>
