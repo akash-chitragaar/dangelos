@@ -67,10 +67,6 @@
                             <i class="bi bi-telephone-fill me-2"></i>
                             <a href="tel:<?php echo $restaurant['phone']; ?>"><?php echo $restaurant['phone']; ?></a>
                         </li>
-                        <li>
-                            <i class="bi bi-envelope-fill me-2"></i>
-                            <a href="mailto:<?php echo $restaurant['email']; ?>"><?php echo $restaurant['email']; ?></a>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -94,7 +90,7 @@
                         </li>
                     </ul>
                     <a href="<?php echo $restaurant['orderLink']; ?>" class="btn btn-sm btn-outline-light mt-3" target="_blank" rel="noopener">
-                        <i class="bi bi-bag-check me-1"></i>Order Now
+                        Order Now
                     </a>
                 </div>
             </div>

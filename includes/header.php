@@ -30,8 +30,8 @@
     <?php if (isset($breadcrumb_schema)) echo $breadcrumb_schema; ?>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://assets2.ser.vi/restaurants/dangelosmaster/venuelogo/logo-D1.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://assets2.ser.vi/restaurants/dangelosmaster/venuelogo/logo-D1.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.ico">
 </head>
 <body>
 

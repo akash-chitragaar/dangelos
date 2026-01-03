@@ -55,7 +55,7 @@
       "_comment": "API configuration for Google Reviews and other integrations",
       "restaurantId": "dangelospizzeria",
       "googlePlaceId": "ChIJL_5Er0DzwokRNy6jM7_DyGY",
-      "reviewsApiUrl": "https://reviewsapi.restaurant.ink",
+      "reviewsApiUrl": "https://apireviews.restaurant.ink",
       "apiKey": "da_live_pk_7f8e9d0a1b2c3d4e5f6a7b8c9d0e1f2a"
     }
   },

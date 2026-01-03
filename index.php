@@ -84,7 +84,6 @@ $testimonials = $config['testimonials'];
         "image": "https://assets2.ser.vi/restaurants/dangelosmaster/venuelogo/logo-D1.png",
         "url": "http://dangelosgunhill.com/",
         "telephone": "<?php echo $restaurant['phone']; ?>",
-        "email": "<?php echo $restaurant['email']; ?>",
         "priceRange": "$$",
         "servesCuisine": ["Italian", "Pizza", "Pasta", "American"],
         "acceptsReservations": "False",
@@ -180,8 +179,8 @@ $testimonials = $config['testimonials'];
     <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://assets2.ser.vi/restaurants/dangelosmaster/venuelogo/logo-D1.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://assets2.ser.vi/restaurants/dangelosmaster/venuelogo/logo-D1.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.ico">
 </head>
 
 <body>
@@ -209,9 +208,6 @@ $testimonials = $config['testimonials'];
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Reviews JS -->
-    <script src="assets/js/reviews.js"></script>
 
     <!-- Custom JS -->
     <script src="assets/js/main.js"></script>

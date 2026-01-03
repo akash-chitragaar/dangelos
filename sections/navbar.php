@@ -28,7 +28,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="<?php echo $restaurant['orderLink']; ?>" class="btn btn-order ms-lg-3" target="_blank" rel="noopener">
-                        <i class="bi bi-bag-check me-1"></i>Order Now
+                        Order Now
                     </a>
                 </li>
             </ul>

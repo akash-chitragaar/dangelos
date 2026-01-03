@@ -73,7 +73,7 @@ $page_url = "http://dangelosgunhill.com/getapp";
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://assets2.ser.vi/restaurants/dangelosmaster/venuelogo/logo-D1.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     
     <style>
         * {
