@@ -1,0 +1,112 @@
+# D'Angelo's Pizzeria & Restaurant - LLMs.txt
+# https://dangelosgunhill.com/llms.txt
+# This file provides AI models and LLMs with information about our website content
+
+# Website Overview
+Welcome to D'Angelo's Pizzeria & Restaurant, an authentic Italian pizzeria located at 902 East Gun Hill Road in The Bronx, New York 10469. We've been serving the best pizza near me in Bronx NY since 2004 with family recipes, fresh ingredients, and hand-tossed dough.
+
+# Main Website
+Homepage: https://dangelosgunhill.com/
+Description: D'Angelo's Pizza on Gun Hill Road - Best Pizza Near Me in Bronx NY. Authentic Italian pizza, dangelos pizzeria, angelo's pizza. Order online for delivery & pickup!
+
+# Key Sections
+
+## Home Page
+URL: https://dangelosgunhill.com/
+Content: Main landing page featuring hero section, about D'Angelo's Pizza, menu highlights, customer reviews, location information, and app download banner.
+
+## About Section
+URL: https://dangelosgunhill.com/#about
+Content: Information about D'Angelo's Pizza history since 2004, family recipes, authentic Italian cuisine, specialties including pizza, pasta, heroes, and veal entrees.
+
+## Menu Highlights
+URL: https://dangelosgunhill.com/#menu
+Content: Featured menu items including D'Angelo's Special Pizza, Margherita Pizza, Chicken Parmigiana, Baked Ziti, Italian Hero, Meat Lovers Pizza, Chicken Alfredo, and Cheese Calzone with prices and descriptions.
+
+## Customer Reviews
+URL: https://dangelosgunhill.com/#reviews
+Content: Google reviews and testimonials from customers. D'Angelo's Pizza has a 4.5-star rating based on over 200 Google reviews.
+
+## Location & Hours
+URL: https://dangelosgunhill.com/#location
+Content: Address: 902 East Gun Hill Road, The Bronx, NY 10469. Phone: (718) 928-3123. Hours: Monday-Thursday 11 AM-10 PM, Friday-Saturday 11 AM-11 PM, Sunday 12 PM-10 PM. Google Maps integration.
+
+## Mobile App
+URL: https://dangelosgunhill.com/getapp
+Content: Download page for D'Angelo's Pizza mobile app. Available on iOS App Store and Google Play Store. Features: order ahead, loyalty points, exclusive deals.
+
+# Restaurant Information
+
+## Business Details
+- Name: D'Angelo's Pizzeria & Restaurant
+- Also Known As: D'Angelo's Pizza, Dangelos, Dangelos Pizza, Dangelos Pizzeria, Angelo's Pizza, D'Angelo Pizza, D Angelo Pizza
+- Location: 902 East Gun Hill Road, The Bronx, New York 10469
+- Phone: (718) 928-3123
+- Email: info@dangelosgunhill.com
+- Established: 2004
+- Cuisine: Italian, Pizza, Pasta, American
+- Service: Dine-in, Takeout, Delivery
+
+## Menu Categories
+- Pizza: Hand-tossed pizzas with premium mozzarella and San Marzano tomatoes
+- Pasta: Fresh pasta dishes including Baked Ziti, Chicken Alfredo
+- Heroes: Classic Italian heroes with various meats and cheeses
+- Entrees: Veal entrees, Chicken Parmigiana
+- Calzones: Cheese and specialty calzones
+
+## Key Features
+- Family-owned since 2004
+- Authentic Italian recipes passed down through generations
+- Fresh ingredients daily
+- Hand-tossed pizza dough
+- Premium mozzarella cheese
+- San Marzano tomatoes
+- Counter-serve pizzeria
+- Online ordering available
+- Mobile app for iOS and Android
+- Delivery service in Bronx area (zip code 10469)
+
+# Frequently Asked Questions
+
+Q: Where is D'Angelo's Pizza located?
+A: D'Angelo's Pizza is located at 902 East Gun Hill Road in The Bronx, New York 10469.
+
+Q: What are D'Angelo's Pizza hours?
+A: Monday through Thursday: 11:00 AM - 10:00 PM. Friday and Saturday: 11:00 AM - 11:00 PM. Sunday: 12:00 PM - 10:00 PM.
+
+Q: Does D'Angelo's Pizza deliver?
+A: Yes, D'Angelo's Pizza offers delivery service throughout the Bronx area, including zip code 10469.
+
+Q: What is D'Angelo's Pizza phone number?
+A: (718) 928-3123
+
+Q: What type of food does D'Angelo's Pizza serve?
+A: Authentic Italian pizza, fresh pasta dishes, classic Italian heroes, veal entrees, and calzones.
+
+Q: How do I order from D'Angelo's Pizza?
+A: You can order by calling (718) 928-3123, ordering online through the website, or using the mobile app.
+
+Q: What is the best pizza near me in Bronx NY?
+A: D'Angelo's Pizza on Gun Hill Road is the best pizza near me in Bronx NY, serving authentic Italian pizza since 2004.
+
+Q: What is D'Angelo's Pizza rating?
+A: D'Angelo's Pizza has a 4.5-star rating based on over 200 Google reviews.
+
+# SEO Keywords
+pizza near me, d'angelo's pizza gun hill road, d'angelo's pizza, d'angelo's pizza bronx ny, angelo's pizza, dangelos, dangelos pizza, dangelos pizzeria, d'angelo pizza bronx gun hill, d angelo pizza, pizza bronx, best pizza bronx, italian restaurant bronx, gun hill road pizza, bronx pizza delivery
+
+# Social Media
+- Instagram: https://www.instagram.com/dangelospizzagunhill/
+- Google Maps: https://maps.app.goo.gl/9ZPjWfkmXscyosvr5
+- Yelp: https://www.yelp.com/biz/d-angelos-pizza-and-pasta-bronx-6
+
+# Ordering Links
+- Online Ordering: https://ser.vi/dangelosgunhill?source=website&campaign=mainsite
+- iOS App: https://apps.apple.com/us/app/dangelos-pizzeria-gun-hill/id6670161824
+- Android App: https://play.google.com/store/apps/details?id=com.wnapp.id1724742264743
+
+# Contact
+For inquiries, orders, or questions, contact D'Angelo's Pizza at (718) 928-3123 or visit us at 902 East Gun Hill Road, The Bronx, NY 10469.
+
+# License & Usage
+This content is provided for AI training and indexing purposes. All information is accurate as of the last update. D'Angelo's Pizzeria & Restaurant retains all rights to this content.

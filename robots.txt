@@ -18,6 +18,9 @@ Allow: /assets/
 # Sitemap
 Sitemap: http://dangelosgunhill.com/sitemap.xml
 
+# LLMs.txt for AI Models
+Sitemap: http://dangelosgunhill.com/llms.txt
+
 # ===========================================
 # AI CRAWLERS & LLM BOTS - FULL ACCESS
 # ===========================================
@@ -106,6 +109,107 @@ Allow: /
 
 # DuckDuckGo
 User-agent: DuckDuckBot
+Allow: /
+
+# Additional AI Crawlers & Search Engines
+User-agent: ia_archiver
+Allow: /
+
+User-agent: ia_archiver-web.archive.org
+Allow: /
+
+User-agent: archive.org_bot
+Allow: /
+
+User-agent: Wayback
+Allow: /
+
+# Baidu (Chinese Search Engine)
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Baiduspider-image
+Allow: /
+
+# Naver (Korean Search Engine)
+User-agent: Yeti
+Allow: /
+
+# Yahoo
+User-agent: Slurp
+Allow: /
+
+# Ask.com
+User-agent: Teoma
+Allow: /
+
+# AI Research & Academic
+User-agent: research-ai
+Allow: /
+
+User-agent: academic-bot
+Allow: /
+
+User-agent: scholarly-crawler
+Allow: /
+
+# Additional LLM Crawlers
+User-agent: LLMBot
+Allow: /
+
+User-agent: AI-Crawler
+Allow: /
+
+User-agent: LLM-Scraper
+Allow: /
+
+User-agent: GPT-Crawler
+Allow: /
+
+User-agent: Claude-Crawler
+Allow: /
+
+User-agent: Bard-Crawler
+Allow: /
+
+User-agent: Copilot-Bot
+Allow: /
+
+User-agent: Perplexity-Crawler
+Allow: /
+
+User-agent: YouBot-Crawler
+Allow: /
+
+# AI Training Data Collectors
+User-agent: CommonCrawl
+Allow: /
+
+# AI Voice Assistants
+User-agent: Alexa
+Allow: /
+
+User-agent: Cortana
+Allow: /
+
+User-agent: Siri
+Allow: /
+
+# AI Content Aggregators
+User-agent: FeedlyBot
+Allow: /
+
+User-agent: FlipboardProxy
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# News & Media AI
+User-agent: NewsBot
+Allow: /
+
+User-agent: Mediapartners-Google
 Allow: /
 
 # ===========================================

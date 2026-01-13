@@ -12,7 +12,7 @@
         restaurantId: 'dangelospizzeria',
         apiKey: 'da_live_pk_7f8e9d0a1b2c3d4e5f6a7b8c9d0e1f2a',
         maxReviews: 6,
-        minRating: 4
+        minRating: 2 // Minimum 2 stars - filter out 1-star reviews
     };
 
     // Fallback reviews if API fails
@@ -76,9 +76,15 @@
             const data = await response.json();
 
             if (data.success && data.reviews && data.reviews.length > 0) {
-                console.log('✅ Reviews loaded from API:', data.reviews.length);
+                // Filter out 1-star reviews - only show 2 stars and above
+                const filteredReviews = data.reviews.filter(review => {
+                    const rating = parseInt(review.rating) || 0;
+                    return rating >= CONFIG.minRating; // Only show reviews with 2 stars or more
+                });
+                
+                console.log('✅ Reviews loaded from API:', filteredReviews.length, '(filtered from', data.reviews.length, 'total)');
                 return {
-                    reviews: data.reviews.slice(0, CONFIG.maxReviews),
+                    reviews: filteredReviews.slice(0, CONFIG.maxReviews),
                     average_rating: data.average_rating || 4.5,
                     total_reviews: data.total_reviews_count || 200,
                     cached: data.cached || false

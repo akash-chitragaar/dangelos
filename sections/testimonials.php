@@ -242,9 +242,15 @@
                 container.style.display = 'flex';
                 googleLink.style.display = 'block';
 
-                // Update and show badge
+                // Filter out 1-star reviews - only show 2 stars and above
+                const filteredReviews = data.reviews.filter(review => {
+                    const rating = parseInt(review.rating) || 0;
+                    return rating >= 2; // Only show reviews with 2 stars or more
+                });
+
+                // Update and show badge (only if we have filtered reviews)
                 const badge = document.getElementById('google-badge');
-                if (data.average_rating) {
+                if (filteredReviews.length > 0 && data.average_rating) {
                     const rating = parseFloat(data.average_rating);
                     document.getElementById('badge-rating').textContent = rating.toFixed(1);
                     
@@ -262,10 +268,19 @@
                 if (data.total_reviews_count) {
                     document.getElementById('badge-count').textContent = data.total_reviews_count.toLocaleString();
                 }
-                badge.style.display = 'flex';
+                if (filteredReviews.length > 0) {
+                    badge.style.display = 'flex';
+                }
 
-                // Display reviews as cards (max 6)
-                const reviews = data.reviews.slice(0, 6);
+                // Display filtered reviews as cards (max 6, excluding 1-star reviews)
+                const reviews = filteredReviews.slice(0, 6);
+
+                // Only display reviews if we have any after filtering
+                if (reviews.length === 0) {
+                    loading.style.display = 'none';
+                    container.innerHTML = '<div class="col-12 text-center"><p class="text-muted">No reviews available at this time.</p></div>';
+                    return;
+                }
 
                 reviews.forEach(review => {
                     const excerpt = review.text && review.text.length > 220

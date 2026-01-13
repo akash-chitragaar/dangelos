@@ -5,7 +5,7 @@
     <!-- Homepage -->
     <url>
         <loc>http://dangelosgunhill.com/</loc>
-        <lastmod>2025-12-10</lastmod>
+        <lastmod>2026-01-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -13,7 +13,7 @@
     <!-- Home Page -->
     <url>
         <loc>http://dangelosgunhill.com/home</loc>
-        <lastmod>2025-12-10</lastmod>
+        <lastmod>2026-01-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -21,16 +21,24 @@
     <!-- Get App Page -->
     <url>
         <loc>http://dangelosgunhill.com/getapp</loc>
-        <lastmod>2025-12-10</lastmod>
+        <lastmod>2026-01-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+    </url>
+    
+    <!-- LLMs.txt for AI Models -->
+    <url>
+        <loc>http://dangelosgunhill.com/llms.txt</loc>
+        <lastmod>2026-01-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
     </url>
     
     <!-- Section Anchors (for reference, not crawlable) -->
     <!-- About Section -->
     <url>
         <loc>http://dangelosgunhill.com/#about</loc>
-        <lastmod>2025-12-10</lastmod>
+        <lastmod>2026-01-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -38,7 +46,7 @@
     <!-- Menu Section -->
     <url>
         <loc>http://dangelosgunhill.com/#menu</loc>
-        <lastmod>2025-12-10</lastmod>
+        <lastmod>2026-01-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
@@ -46,7 +54,7 @@
     <!-- Reviews Section -->
     <url>
         <loc>http://dangelosgunhill.com/#reviews</loc>
-        <lastmod>2025-12-10</lastmod>
+        <lastmod>2026-01-13</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
@@ -54,7 +62,7 @@
     <!-- Location Section -->
     <url>
         <loc>http://dangelosgunhill.com/#location</loc>
-        <lastmod>2025-12-10</lastmod>
+        <lastmod>2026-01-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>

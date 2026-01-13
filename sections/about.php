@@ -16,7 +16,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="about-image">
-                    <img src="https://assets2.ser.vi/brand/alluseuvenue/feature_image/d-angelos-venue.png" alt="About <?php echo $restaurant['name']; ?>" class="img-fluid rounded" width="800" height="600" loading="lazy">
+                    <img src="https://assets2.ser.vi/brand/alluseuvenue/feature_image/d-angelos-venue.png" alt="D'Angelo's Pizza Gun Hill Road - Best Pizza Near Me Bronx NY - D'Angelo's Pizzeria" class="img-fluid rounded" width="800" height="600" loading="lazy">
                 </div>
             </div>
         </div>

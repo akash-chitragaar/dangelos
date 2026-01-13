@@ -145,8 +145,32 @@ if ($httpCode !== 200) {
     exit;
 }
 
-// Return the successful response
-http_response_code($httpCode);
-echo $response;
+// Parse the response to filter out 1-star reviews
+$jsonResponse = json_decode($response, true);
+
+if ($jsonResponse && isset($jsonResponse['reviews']) && is_array($jsonResponse['reviews'])) {
+    // Filter out 1-star reviews - only keep reviews with 2 stars or more
+    $filteredReviews = array_filter($jsonResponse['reviews'], function($review) {
+        $rating = isset($review['rating']) ? (int)$review['rating'] : 0;
+        return $rating >= 2; // Only show reviews with 2 stars or more
+    });
+    
+    // Re-index array after filtering
+    $jsonResponse['reviews'] = array_values($filteredReviews);
+    
+    // Update review count if needed
+    if (isset($jsonResponse['total_reviews_count'])) {
+        // Keep original count for display, but filtered count for actual reviews array
+        $jsonResponse['filtered_reviews_count'] = count($jsonResponse['reviews']);
+    }
+    
+    // Return filtered response
+    http_response_code($httpCode);
+    echo json_encode($jsonResponse, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+} else {
+    // Return original response if we can't parse it
+    http_response_code($httpCode);
+    echo $response;
+}
 ?>
 

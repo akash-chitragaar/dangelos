@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="#home">
-            <img src="https://assets2.ser.vi/restaurants/dangelosmaster/venuelogo/logo-D1.png" alt="<?php echo $restaurant['name']; ?>" style="height: 45px; width: auto; max-width: 50px; object-fit: contain;" class="me-2">
+            <img src="https://assets2.ser.vi/restaurants/dangelosmaster/venuelogo/logo-D1.png" alt="D'Angelo's Pizza Gun Hill Road - Pizza Near Me Bronx NY" style="height: 45px; width: auto; max-width: 50px; object-fit: contain;" class="me-2">
             <span class="brand-text">D'Angelo's Pizzeria & Restaurant</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"

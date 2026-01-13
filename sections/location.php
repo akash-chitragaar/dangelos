@@ -34,7 +34,8 @@
                                 <h5 class="mb-1">Address</h5>
                                 <p class="mb-1 text-muted">
                                     <?php echo $restaurant['address']['street']; ?><br>
-                                    <?php echo $restaurant['address']['city']; ?>, <?php echo $restaurant['address']['state']; ?> <?php echo $restaurant['address']['zip']; ?>
+                                    <?php echo $restaurant['address']['city']; ?>, <?php echo $restaurant['address']['state']; ?> <?php echo $restaurant['address']['zip']; ?><br>
+                                    <small class="text-muted">D'Angelo's Pizza on Gun Hill Road - Best Pizza Near Me in Bronx NY</small>
                                 </p>
                                 <a href="<?php echo $restaurant['geo']['googleMapsUrl']; ?>" target="_blank" rel="noopener" class="location-link small">
                                     Get Directions <i class="bi bi-arrow-right ms-1"></i>

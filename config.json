@@ -5,7 +5,7 @@
   "restaurant": {
     "name": "D'Angelo's Pizzeria & Restaurant",
     "tagline": "Authentic Italian Pizza & Cuisine",
-    "description": "Best pizzeria in The Bronx since 2004! D'Angelo's Pizzeria & Restaurant serves authentic Italian pizza, fresh pasta, classic heroes, and veal entrees in Gun Hill, NY. Counter-serve pizzeria with hand-tossed pizzas, premium mozzarella, San Marzano tomatoes, and family recipes. Dine-in, takeout, and delivery in 10469. Order online for pickup or delivery!",
+    "description": "D'Angelo's Pizza on Gun Hill Road in Bronx NY - Best pizza near me! Since 2004, D'Angelo's Pizzeria (also known as Dangelos, Angelo's Pizza, D'Angelo Pizza) serves authentic Italian pizza, fresh pasta, classic heroes, and veal entrees. Located on Gun Hill Road in The Bronx, our counter-serve pizzeria features hand-tossed pizzas, premium mozzarella, San Marzano tomatoes, and family recipes. Dine-in, takeout, and delivery in 10469. Find D'Angelo's Pizza Bronx NY - your local pizza restaurant! Order online for pickup or delivery!",
     "phone": "(718) 928-3123",
     "email": "info@dangelosgunhill.com",
     "address": {
@@ -61,9 +61,9 @@
   },
   "hero": {
     "_comment": "Homepage hero section",
-    "title": "D'Angelo's Pizzeria & Restaurant",
-    "subtitle": "Authentic Italian Pizza • Fresh Pasta • Classic Heroes",
-    "description": "Family Recipes, Fresh Ingredients, Made with Love",
+    "title": "D'Angelo's Pizza on Gun Hill Road",
+    "subtitle": "Best Pizza Near Me in Bronx NY • Authentic Italian Pizza • D'Angelo's Pizzeria",
+    "description": "Find the best pizza near me! D'Angelo's Pizza on Gun Hill Road in Bronx NY. Authentic Italian pizza, dangelos pizzeria, angelo's pizza. Family recipes, fresh ingredients, made with love.",
     "backgroundImage": "https://assets2.ser.vi/brand/alluseuvenue/feature_image/d-angelos-venue.png",
     "ctaText": "Order Online Now",
     "ctaSecondary": "View Full Menu",
@@ -71,9 +71,9 @@
   },
   "about": {
     "_comment": "About section content",
-    "title": "About D'Angelo's Pizzeria – Authentic Italian in the Bronx",
-    "subtitle": "Family Tradition Since 2004",
-    "content": "Welcome to D'Angelo's Pizzeria and Restaurant, a beloved counter-serve pizzeria in The Bronx serving authentic Italian favorites since 2004. Located in the heart of Gun Hill, we specialize in hand-tossed pizzas made with premium mozzarella, San Marzano tomatoes, and cherished family recipes passed down through generations.\\n\\nOur extensive menu features more than just pizza – enjoy fresh pasta dishes, classic Italian heroes, savory veal entrees, and rotating daily specials. Every dish is crafted with the finest ingredients and authentic Italian cooking techniques that have made us a neighborhood favorite for over 20 years.\\n\\nWhether you're dining in at our casual counter-serve location, grabbing takeout on the go, or enjoying delivery to your home in The Bronx, D'Angelo's brings the warmth and tradition of a true family-run Italian eatery to your table. Experience authentic Italian cuisine in Gun Hill – where quality ingredients meet time-honored recipes. Mangia bene!",
+    "title": "D'Angelo's Pizza Gun Hill Road – Best Pizza Near Me in Bronx NY",
+    "subtitle": "Family Tradition Since 2004 | D'Angelo's Pizzeria",
+    "content": "Welcome to D'Angelo's Pizza on Gun Hill Road in Bronx NY – your go-to pizza near me! We've been serving authentic Italian favorites since 2004. We specialize in hand-tossed pizzas made with premium mozzarella, San Marzano tomatoes, and cherished family recipes passed down through generations.\\n\\nOur menu features fresh pasta dishes, classic Italian heroes, savory veal entrees, and rotating daily specials. Every dish is crafted with the finest ingredients and authentic Italian cooking techniques. Dine in, grab takeout, or enjoy delivery to your home in The Bronx.",
     "image": "assets/images/about-pizza.jpg",
     "stats": [
       {
@@ -110,9 +110,9 @@
   ],
   "specialties": {
     "_comment": "Menu highlights section header",
-    "title": "Our Specialties – Authentic Italian Pizza & Cuisine",
-    "subtitle": "Fresh Pizza, Pasta, Heroes & More",
-    "description": "Every dish is crafted with authentic Italian recipes and the finest ingredients. From classic pizza to homemade pasta and signature heroes."
+    "title": "Our Specialties – D'Angelo's Pizza & Authentic Italian Cuisine",
+    "subtitle": "Best Pizza Near Me • Fresh Pizza, Pasta, Heroes & More",
+    "description": "Every dish at D'Angelo's Pizza is crafted with authentic Italian recipes and the finest ingredients. From classic pizza to homemade pasta and signature heroes. Find the best pizza near me at D'Angelo's Pizzeria on Gun Hill Road in Bronx NY."
   },
   "menuHighlights": [
     {
@@ -190,8 +190,8 @@
   "testimonials": [],
   "locations": {
     "_comment": "Location and contact information",
-    "title": "Visit Us",
-    "subtitle": "Come Experience Authentic Italian Cuisine",
+    "title": "D'Angelo's Pizza on Gun Hill Road - Find Us",
+    "subtitle": "Best Pizza Near Me in Bronx NY • Visit D'Angelo's Pizzeria",
     "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3016.848129465807!2d-73.86293272325233!3d40.875206971369686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f340af44fe2f%3A0x66c8c3bf33a32e37!2sD%27Angelo%27s%20Pizzeria%20and%20Restaurant%20-%20Gun%20Hill!5e0!3m2!1sen!2sin!4v1766368069974!5m2!1sen!2sin"
   }
 }

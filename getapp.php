@@ -14,6 +14,10 @@ $page_description = "Download the official D'Angelo's Pizzeria mobile app. Order
 $page_keywords = "dangelos pizza app, pizzeria mobile app, order pizza app bronx, food delivery app, pizza app download, ios app, android app";
 $page_image = "https://assets2.ser.vi/restaurants/dangelosmaster/venuelogo/logo-D1.png";
 $page_url = "http://dangelosgunhill.com/getapp";
+
+// Byline dates for SEO - Google can show dates in search results
+$datePublished = '2024-01-15T00:00:00+00:00'; // Original page creation date
+$dateModified = date('Y-m-d\TH:i:s\Z', filemtime(__FILE__)); // Last file modification time
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,12 +34,20 @@ $page_url = "http://dangelosgunhill.com/getapp";
     <!-- Canonical URL -->
     <link rel="canonical" href="<?php echo $page_url; ?>">
     
+    <!-- Byline Dates for Google Search Results -->
+    <meta property="article:published_time" content="<?php echo $datePublished; ?>">
+    <meta property="article:modified_time" content="<?php echo $dateModified; ?>">
+    <meta name="pubdate" content="<?php echo $datePublished; ?>">
+    <meta name="lastmod" content="<?php echo $dateModified; ?>">
+    
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="<?php echo $page_url; ?>">
     <meta property="og:title" content="<?php echo $page_title; ?>">
     <meta property="og:description" content="<?php echo $page_description; ?>">
     <meta property="og:image" content="<?php echo $page_image; ?>">
+    <meta property="article:published_time" content="<?php echo $datePublished; ?>">
+    <meta property="article:modified_time" content="<?php echo $dateModified; ?>">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
@@ -63,6 +75,26 @@ $page_url = "http://dangelosgunhill.com/getapp";
           "item": "http://dangelosgunhill.com/getapp"
         }
       ]
+    }
+    </script>
+
+    <!-- WebPage Schema with Byline Dates -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "http://dangelosgunhill.com/getapp#webpage",
+        "url": "http://dangelosgunhill.com/getapp",
+        "name": "<?php echo $page_title; ?>",
+        "description": "<?php echo $page_description; ?>",
+        "datePublished": "<?php echo $datePublished; ?>",
+        "dateModified": "<?php echo $dateModified; ?>",
+        "inLanguage": "en-US",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "D'Angelo's Pizzeria & Restaurant",
+            "url": "http://dangelosgunhill.com/"
+        }
     }
     </script>
     
