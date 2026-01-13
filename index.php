@@ -43,10 +43,10 @@ $dateModified = date('Y-m-d\TH:i:s\Z', filemtime(__FILE__)); // Last file modifi
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Primary Meta Tags -->
-    <title>D'Angelo's Pizza Gun Hill Road | Pizza Near Me Bronx NY | D'Angelo's Pizzeria</title>
-    <meta name="title" content="D'Angelo's Pizza Gun Hill Road | Pizza Near Me Bronx NY | D'Angelo's Pizzeria">
+    <title>D'Angelo's Pizza Gun Hill Road | Pizza Near Me Bronx NY</title>
+    <meta name="title" content="D'Angelo's Pizza Gun Hill Road | Pizza Near Me Bronx NY">
     <meta name="description"
-        content="D'Angelo's Pizza on Gun Hill Road in Bronx NY. Best pizza near me! Authentic Italian pizza, dangelos pizzeria, angelo's pizza. D'Angelo pizza Bronx Gun Hill. Order online for delivery & pickup!">
+        content="D'Angelo's Pizza on Gun Hill Road in Bronx NY. Best pizza near me! Authentic Italian pizza. Order online for delivery & pickup!">
 
     <!-- Primary keywords + local pack boosters -->
     <meta name="keywords"
@@ -66,7 +66,7 @@ $dateModified = date('Y-m-d\TH:i:s\Z', filemtime(__FILE__)); // Last file modifi
     <meta property="og:url" content="http://dangelosgunhill.com/">
     <meta property="og:title" content="D'Angelo's Pizza Gun Hill Road | Pizza Near Me Bronx NY">
     <meta property="og:description"
-        content="D'Angelo's Pizza on Gun Hill Road in Bronx NY. Best pizza near me! Authentic Italian pizza, dangelos pizzeria. Order online for delivery & pickup!">
+        content="D'Angelo's Pizza on Gun Hill Road in Bronx NY. Best pizza near me! Authentic Italian pizza. Order online for delivery & pickup!">
     <meta property="og:image"
         content="https://assets2.ser.vi/brand/alluseuvenue/og_image/og-image.webp">
     <meta property="og:image:width" content="1200">
@@ -82,7 +82,7 @@ $dateModified = date('Y-m-d\TH:i:s\Z', filemtime(__FILE__)); // Last file modifi
     <meta property="twitter:url" content="http://dangelosgunhill.com/">
     <meta property="twitter:title" content="D'Angelo's Pizza Gun Hill Road | Pizza Near Me Bronx NY">
     <meta property="twitter:description"
-        content="D'Angelo's Pizza on Gun Hill Road in Bronx NY. Best pizza near me! Authentic Italian pizza, dangelos pizzeria. Order online now!">
+        content="D'Angelo's Pizza on Gun Hill Road in Bronx NY. Best pizza near me! Authentic Italian pizza. Order online now!">
     <meta property="twitter:image" content="https://assets2.ser.vi/brand/alluseuvenue/og_image/og-image.webp">
     <meta property="twitter:image:alt" content="D'Angelo's Pizzeria & Restaurant - Authentic Italian Pizza in Bronx">
     
@@ -157,8 +157,8 @@ $dateModified = date('Y-m-d\TH:i:s\Z', filemtime(__FILE__)); // Last file modifi
         "@type": "WebPage",
         "@id": "http://dangelosgunhill.com/#webpage",
         "url": "http://dangelosgunhill.com/",
-        "name": "D'Angelo's Pizza Gun Hill Road | Pizza Near Me Bronx NY | D'Angelo's Pizzeria",
-        "description": "D'Angelo's Pizza on Gun Hill Road in Bronx NY. Best pizza near me! Authentic Italian pizza, dangelos pizzeria, angelo's pizza. D'Angelo pizza Bronx Gun Hill. Order online for delivery & pickup!",
+        "name": "D'Angelo's Pizza Gun Hill Road | Pizza Near Me Bronx NY",
+        "description": "D'Angelo's Pizza on Gun Hill Road in Bronx NY. Best pizza near me! Authentic Italian pizza. Order online for delivery & pickup!",
         "datePublished": "<?php echo $datePublished; ?>",
         "dateModified": "<?php echo $dateModified; ?>",
         "inLanguage": "en-US",
