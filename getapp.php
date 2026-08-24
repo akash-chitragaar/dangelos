@@ -13,17 +13,56 @@ $page_title = "Download App - D'Angelo's Pizzeria & Restaurant | Order Food";
 $page_description = "Download the official D'Angelo's Pizzeria mobile app. Order ahead, earn loyalty points, and enjoy exclusive deals. Available on iOS App Store and Google Play Store.";
 $page_keywords = "dangelos pizza app, pizzeria mobile app, order pizza app bronx, food delivery app, pizza app download, ios app, android app";
 $page_image = "https://assets2.ser.vi/restaurants/dangelosmaster/venuelogo/logo-D1.png";
-$page_url = "http://dangelosgunhill.com/getapp";
+$page_url = "https://dangelosgunhill.com/getapp";
 
 // Byline dates for SEO - Google can show dates in search results
 $datePublished = '2024-01-15T00:00:00+00:00'; // Original page creation date
-$dateModified = date('Y-m-d\TH:i:s\Z', filemtime(__FILE__)); // Last file modification time
+$dateModified = gmdate('Y-m-d\TH:i:s\Z', filemtime(__FILE__)); // Last file modification time (UTC)
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G8N63S3MTT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-G8N63S3MTT');
+    </script>
+
+    <!-- Ahrefs Analytics -->
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="kVmiQdLRoh7SWzFaTFGAtA" async></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="D'Angelo's Pizzeria & Restaurant">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <meta name="theme-color" content="<?php echo $restaurant['colors']['primary']; ?>">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="D'Angelo's Pizza">
+    <meta name="format-detection" content="telephone=yes">
+
+    <!-- AI Crawlers - matches the house pattern used across Ser.vi restaurant sites.
+         Note: these are advisory only; robots.txt is what actually governs AI crawlers. -->
+    <meta name="GPTBot" content="index, follow">
+    <meta name="ChatGPT-User" content="index, follow">
+    <meta name="Google-Extended" content="index, follow">
+    <meta name="ClaudeBot" content="index, follow">
+    <meta name="Claude-Web" content="index, follow">
+    <meta name="Anthropic-AI" content="index, follow">
+    <meta name="PerplexityBot" content="index, follow">
+    <meta name="Perplexity-User" content="index, follow">
+    <meta name="CCBot" content="index, follow">
+    <meta name="Applebot" content="index, follow">
+    <meta name="Applebot-Extended" content="index, follow">
+    <meta name="cohere-ai" content="index, follow">
+    <meta name="YouBot" content="index, follow">
+    <meta name="meta-externalagent" content="index, follow">
+    <meta name="FacebookBot" content="index, follow">
+    <meta name="Twitterbot" content="index, follow">
+    <meta name="LinkedInBot" content="index, follow">
     
     <!-- Primary Meta Tags -->
     <title><?php echo $page_title; ?></title>
@@ -46,6 +85,9 @@ $dateModified = date('Y-m-d\TH:i:s\Z', filemtime(__FILE__)); // Last file modifi
     <meta property="og:title" content="<?php echo $page_title; ?>">
     <meta property="og:description" content="<?php echo $page_description; ?>">
     <meta property="og:image" content="<?php echo $page_image; ?>">
+    <meta property="og:image:alt" content="D'Angelo's Pizzeria & Restaurant mobile app">
+    <meta property="og:site_name" content="D'Angelo's Pizzeria & Restaurant">
+    <meta property="og:locale" content="en_US">
     <meta property="article:published_time" content="<?php echo $datePublished; ?>">
     <meta property="article:modified_time" content="<?php echo $dateModified; ?>">
     
@@ -66,13 +108,13 @@ $dateModified = date('Y-m-d\TH:i:s\Z', filemtime(__FILE__)); // Last file modifi
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "http://dangelosgunhill.com/"
+          "item": "https://dangelosgunhill.com/"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Get App",
-          "item": "http://dangelosgunhill.com/getapp"
+          "item": "https://dangelosgunhill.com/getapp"
         }
       ]
     }
@@ -83,8 +125,8 @@ $dateModified = date('Y-m-d\TH:i:s\Z', filemtime(__FILE__)); // Last file modifi
     {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "@id": "http://dangelosgunhill.com/getapp#webpage",
-        "url": "http://dangelosgunhill.com/getapp",
+        "@id": "https://dangelosgunhill.com/getapp#webpage",
+        "url": "https://dangelosgunhill.com/getapp",
         "name": "<?php echo $page_title; ?>",
         "description": "<?php echo $page_description; ?>",
         "datePublished": "<?php echo $datePublished; ?>",
@@ -93,7 +135,7 @@ $dateModified = date('Y-m-d\TH:i:s\Z', filemtime(__FILE__)); // Last file modifi
         "isPartOf": {
             "@type": "WebSite",
             "name": "D'Angelo's Pizzeria & Restaurant",
-            "url": "http://dangelosgunhill.com/"
+            "url": "https://dangelosgunhill.com/"
         }
     }
     </script>
@@ -116,7 +158,7 @@ $dateModified = date('Y-m-d\TH:i:s\Z', filemtime(__FILE__)); // Last file modifi
         
         body {
             font-family: 'Roboto', sans-serif;
-            background: linear-gradient(135deg, #c41e3a, #1a1a1a);
+            background: linear-gradient(135deg, <?php echo $restaurant['colors']['primary']; ?>, <?php echo $restaurant['colors']['dark']; ?>);
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -147,7 +189,7 @@ $dateModified = date('Y-m-d\TH:i:s\Z', filemtime(__FILE__)); // Last file modifi
         }
         
         .app-download-title {
-            color: #1a1a1a;
+            color: <?php echo $restaurant['colors']['dark']; ?>;
             font-size: 1.8rem;
             font-weight: 700;
             font-family: 'Playfair Display', serif;
@@ -185,7 +227,7 @@ $dateModified = date('Y-m-d\TH:i:s\Z', filemtime(__FILE__)); // Last file modifi
         .app-features {
             text-align: left;
             padding: 20px;
-            background: #faf8f3;
+            background: <?php echo $restaurant['colors']['light']; ?>;
             border-radius: 16px;
             margin-top: 2rem;
         }
@@ -210,13 +252,39 @@ $dateModified = date('Y-m-d\TH:i:s\Z', filemtime(__FILE__)); // Last file modifi
             color: #333;
             font-size: 0.95rem;
         }
+
+        .feature-item {
+            animation: fadeInLeft 0.6s ease-out forwards;
+        }
+
+        .feature-item:nth-child(1) { animation-delay: 0.1s; }
+        .feature-item:nth-child(2) { animation-delay: 0.2s; }
+        .feature-item:nth-child(3) { animation-delay: 0.3s; }
+        .feature-item:nth-child(4) { animation-delay: 0.4s; }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-15px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .feature-item {
+                animation: none;
+            }
+        }
         
         .back-link {
             margin-top: 1.5rem;
         }
         
         .back-link a {
-            color: #c41e3a;
+            color: <?php echo $restaurant['colors']['primary']; ?>;
             text-decoration: none;
             font-size: 0.95rem;
             font-weight: 500;
@@ -224,7 +292,7 @@ $dateModified = date('Y-m-d\TH:i:s\Z', filemtime(__FILE__)); // Last file modifi
         }
         
         .back-link a:hover {
-            color: #1a1a1a;
+            color: <?php echo $restaurant['colors']['dark']; ?>;
         }
         
         @media (max-width: 768px) {
@@ -359,7 +427,7 @@ $dateModified = date('Y-m-d\TH:i:s\Z', filemtime(__FILE__)); // Last file modifi
     
     <!-- Back to Website Link -->
     <div class="back-link">
-        <a href="http://dangelosgunhill.com/">
+        <a href="https://dangelosgunhill.com/">
             Visit us at dangelosgunhill.com
         </a>
     </div>

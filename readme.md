@@ -39,8 +39,8 @@ Official website for D'Angelo's Pizzeria & Restaurant located at 902 E Gun Hill 
 
 ## App Store Links
 
-- **iOS App Store**: https://apps.apple.com/us/app/dangelos-pizzeria/id6738046441
-- **Google Play Store**: https://play.google.com/store/apps/details?id=com.wnapp.id1762219277961
+- **iOS App Store**: https://apps.apple.com/us/app/dangelos-pizzeria-gun-hill/id6670161824
+- **Google Play Store**: https://play.google.com/store/apps/details?id=com.wnapp.id1724742264743
 
 ## File Structure
 
