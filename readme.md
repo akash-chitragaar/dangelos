@@ -10,7 +10,7 @@ Official website for D'Angelo's Pizzeria & Restaurant located at 902 E Gun Hill 
 - **Google Maps integration**: Interactive location map
 - **App download page**: Dedicated page with auto-detection for iOS/Android
 - **Clean URL structure**: .htaccess rewrite rules for SEO-friendly URLs
-- **Modern Italian-inspired UI**: Red, green, and cream color scheme
+- **Modern Italian-inspired UI**: Red, taupe, gold and cream color scheme
 - **Performance optimized**: Lazy loading, caching, and optimized assets
 - **Reviews API Integration**: Live Google reviews with 24-hour caching
 
@@ -33,9 +33,9 @@ Official website for D'Angelo's Pizzeria & Restaurant located at 902 E Gun Hill 
 
 ## URLs
 
-- **Main Domain**: http://dangelosgunhill.com → redirects to index.php
-- **Home Page**: http://dangelosgunhill.com/home
-- **Get App Page**: http://dangelosgunhill.com/getapp
+- **Main Domain**: https://dangelosgunhill.com → redirects to index.php
+- **Home Page**: https://dangelosgunhill.com/home
+- **Get App Page**: https://dangelosgunhill.com/getapp
 
 ## App Store Links
 
@@ -51,20 +51,19 @@ dangelos/
 │   │   └── style.css              # Main stylesheet (Italian theme)
 │   ├── images/
 │   │   ├── appstore.webp          # App Store button
-│   │   ├── playstore.webp         # Google Play button
-│   │   ├── logo.png               # Restaurant logo
-│   │   ├── hero-bg.jpg            # Hero background
-│   │   ├── about-pizza.jpg        # About section image
-│   │   ├── app-mockup.webp        # App mockup image
-│   │   └── og-image.webp          # Social media preview
+│   │   └── playstore.webp         # Google Play button
 │   └── js/
 │       ├── main.js                # Main JavaScript
-│       └── reviews.js             # Google Reviews integration
+│       └── reviews.js             # Legacy - not loaded by any page
+├── api/
+│   └── reviews-api-wrapper.php    # Server-side Reviews API proxy
+├── includes/
+│   ├── header.php                 # Unused - both pages inline their own head
+│   └── footer.php                 # Unused
 ├── sections/
 │   ├── navbar.php                 # Navigation bar
 │   ├── hero.php                   # Hero section
 │   ├── about.php                  # About section
-│   ├── menu.php                   # Menu highlights
 │   ├── testimonials.php           # Customer reviews
 │   ├── location.php               # Location & hours
 │   ├── app-banner.php             # App download banner
@@ -100,11 +99,12 @@ All website content is controlled by `config.json`. Simply edit this file to upd
 Current colors (defined in `config.json`):
 ```json
 "colors": {
-  "primary": "#c41e3a",      // Italian red
-  "secondary": "#2d5016",    // Italian green
-  "accent": "#f4a460",       // Sandy brown/tan
-  "light": "#faf8f3",        // Cream
-  "dark": "#1a1a1a"          // Almost black
+  "primary": "#b83232",      // D'Angelo's red
+  "secondary": "#8b7355",    // Warm taupe
+  "accent": "#d4af37",       // Gold
+  "light": "#f5f0e8",        // Cream
+  "dark": "#2c1810",         // Deep brown
+  "gray": "#6c757d"
 }
 ```
 
@@ -119,7 +119,7 @@ To feature menu items on the homepage, set `"featured": true` in the `menuHighli
 3. Verify .htaccess is working for clean URLs
 4. Edit `config.json` to customize your content
 5. Replace placeholder images in `assets/images/`
-6. Configure SSL certificate for HTTPS (recommended)
+6. Enforce HTTPS at the Cloudflare edge - never in .htaccess (see Hosting & Deployment)
 7. Update Google Maps embed URL in `config.json`
 
 ## Google Maps Setup
@@ -130,6 +130,57 @@ To feature menu items on the homepage, set `"featured": true` in the `menuHighli
 4. Copy the iframe URL
 5. Paste it into `config.json` under `locations.mapEmbed`
 
+## Hosting & Deployment
+
+The site is served through **Cloudflare** - TLS terminates at the Cloudflare
+edge, and Cloudflare may reach the origin over plain HTTP.
+
+### Never force HTTPS in .htaccess
+
+Because Cloudflare can talk to the origin over HTTP, `%{HTTPS}` is `off` on
+the origin for **every** request. This rule therefore redirects every URL to
+itself forever and takes the entire site down:
+
+```apache
+# NEVER enable this on this site - it caused a full outage
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+```
+
+Adding an `X-Forwarded-Proto` guard does **not** reliably prevent it - that was
+tried and the loop still happened. Enforce HTTPS at the edge instead:
+
+- Cloudflare -> SSL/TLS -> Edge Certificates -> **Always Use HTTPS**, or
+- Cloudflare -> SSL/TLS -> set mode to **Full**
+
+The `Force HTTPS` block in `.htaccess` is intentionally commented out. Leave it
+that way.
+
+### If the site ever 301s to itself
+
+1. cPanel -> File Manager -> enable **Show Hidden Files**
+2. Rename `.htaccess` to `.htaccess.bak` - the site returns immediately
+   (only the `/home` and `/getapp` clean URLs stop working)
+3. Restore a known-good `.htaccess`, with the HTTPS block commented out
+
+### Deploying
+
+Pushing to `main` does **not** by itself update the live site - the server does
+not pull automatically. A deploy has to be run for changes to appear.
+
+### Testing .htaccess changes first
+
+Rewrite changes must be exercised against real Apache over **plain HTTP**,
+since that is how Cloudflare reaches the origin:
+
+```bash
+curl -sI -L --max-redirs 5 http://127.0.0.1:8899/
+```
+
+A healthy root request returns `200` with **zero** redirects. Note the stock
+`.htaccess` uses Apache 2.2 `Order`/`Deny` directives, so a local test server
+needs `mod_access_compat` loaded or it will return 500.
+
 ## Technologies Used
 
 - PHP 7.4+
@@ -139,7 +190,7 @@ To feature menu items on the homepage, set `"featured": true` in the `menuHighli
 - Bootstrap 5.3.2
 - Bootstrap Icons 1.11.1
 - Google Fonts (Playfair Display & Roboto)
-- Reviews API (via reviewsapi.restaurant.ink)
+- Reviews API (via apireviews.restaurant.ink)
 
 ## Google Reviews Integration
 
@@ -153,19 +204,20 @@ The website displays live Google reviews fetched from the centralized Reviews AP
 - **Fast Loading**: Cached responses for instant page loads
 
 ### How It Works:
-1. Frontend (`reviews.js`) calls Reviews API
-2. Reviews API fetches from Google Places API
-3. Response cached for 24 hours
-4. Reviews displayed in testimonials section
+1. The inline script in `sections/testimonials.php` calls `api/reviews-api-wrapper.php` same-origin
+2. The wrapper adds the private API key and calls the Reviews API server-side
+3. Reviews API fetches from Google Places API; the response is cached for 24 hours
+4. Ratings below 2 stars are filtered out server-side, then rendered in the testimonials section
 
 ### Configuration:
 Reviews API settings in `config.json`:
 ```json
+// config.json -> restaurant.api
 "api": {
   "restaurantId": "dangelospizzeria",
   "googlePlaceId": "ChIJL_5Er0DzwokRNy6jM7_DyGY",
-  "reviewsApiUrl": "https://reviewsapi.restaurant.ink",
-  "apiKey": "da_live_pk_7f8e9d0a1b2c3d4e5f6a7b8c9d0e1f2a"
+  "reviewsApiUrl": "https://apireviews.restaurant.ink",
+  "apiKey": "da_live_pk_xxxxxxxxxxxxxxxx"   // real key lives in config.json, not in docs
 }
 ```
 
@@ -206,7 +258,7 @@ Test API integration by checking browser console for review loading messages.
 ## Design Theme
 
 The website features an authentic Italian-inspired design:
-- **Colors**: Italian flag colors (red, green) with cream accents
+- **Colors**: D'Angelo's red with taupe, gold and cream accents
 - **Typography**: Playfair Display (headings) + Roboto (body)
 - **Style**: Elegant, warm, family-friendly
 - **Imagery**: Focus on food photography and brick oven authenticity
